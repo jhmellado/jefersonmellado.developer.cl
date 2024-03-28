@@ -1,0 +1,11 @@
+
+body {
+    font-family: devjefersonmellado;
+}
+
+.formulario  {
+    background: rebeccapurple;
+    padding: 50px;
+    border-radius: 20px;
+    color: aliceblue;
+}

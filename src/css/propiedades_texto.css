@@ -1,5 +1,5 @@
 body {
-    font-family: +Tahoma, sans-serif;
+    font-family: 'devjefersonmellado',Tahoma, sans-serif;
 }
 
 .titulo {
@@ -22,13 +22,20 @@ p {
     */
     font-size:large;
     /* ANCHO DEL TEXTO */
-    font-weight: bolder;
+    font-weight: 400;
     /* ESTILO DEL TEXTO */
     font-style: italic;
 
+    /* espacio entre lineas */
+    line-height: 5;
+
+    /* espacio entre letras */
+    letter-spacing: 10px;
     text-align: justify;
     /* subrayado abajo arriba y en medio */
-    text-decoration: none;
+    /* text-decoration: none; */
+    /* propiedades todo en mayusculas minusculas o la primera de cada palabra en mayusculas */
+    text-transform: uppercase;
 }   
 
 p span {
