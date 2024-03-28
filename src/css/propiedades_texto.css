@@ -1,0 +1,39 @@
+body {
+    font-family: +Tahoma, sans-serif;
+}
+
+.titulo {
+    color: blueviolet;
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+}
+
+h2.subtitulo {
+    color: slateblue;
+}
+
+p {
+    color: rgb(117, 19, 19);
+    /* TAMAÑO DEL TEXTO
+    las propiedades predeterminadas dependen de como estén configuradas las tipografías
+    */
+    font-size:large;
+    /* ANCHO DEL TEXTO */
+    font-weight: bolder;
+    /* ESTILO DEL TEXTO */
+    font-style: italic;
+
+    text-align: justify;
+    /* subrayado abajo arriba y en medio */
+    text-decoration: none;
+}   
+
+p span {
+    text-decoration: underline;
+}
+
+
+
