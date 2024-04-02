@@ -31,3 +31,27 @@ body {
     margin: 20px
 }
 
+nav {
+    background: lightsalmon;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-item {
+    padding: 2px 4px;
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+    background: rebeccapurple;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    padding: 2px 4px;
+    border: 2px solid rebeccapurple;
+    border-radius: 5px;
+    background: aliceblue;
+    color: rebeccapurple;
+    text-decoration: none;
+}
+
