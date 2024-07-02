@@ -6,39 +6,29 @@
     <title>Jeferson Mellado</title>
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/fonts.css" />
-    <link rel="shortcut icon" href="src/img/favicon.svg" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="src/img/favicon.svg" type="image/x-icon" />
   </head>
 
   <body>
-    <nav>
-      <a class="nav-item" href="enlaces.html">Enlaces</a>
-      <a class="nav-item" href="imagenes.html">Imágenes en HTML</a>
-      <a class="nav-item" href="routes/rutas.html">Rutas en HTML</a>
-      <a class="nav-item" href="formularios.html">Formularios en HTML</a>
-      <a class="nav-item" href="propiedades_texto.html"
-        >Propiedades Texto CSS</a
-      >
-      <a class="nav-item" href="box-model.html">Modelo de cajas</a>
-      <a class="nav-item" href="bordes.html">Bordes en HTML</a>
-      <a class="nav-item" href="fondos.html"
-        >Fondos, Gradientes y Sombras en HTML</a
-      >
-      <a class="nav-item" href="meta.html"
-        >Metaetiquetas, comentarios e iconos</a
-      >
-    </nav>
-    <h1>Jeferson</h1>
-    <h2>Jeferson</h2>
-    <h3>Jeferson</h3>
-    <h4>Jeferson</h4>
-    <h5>Jeferson</h5>
-    <h6>Jeferson</h6>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-      deleniti commodi, iste harum dolore ipsa dolorum a cumque in unde cum
-      natus voluptatum temporibus, neque perferendis minus tempore maiores
-      laboriosam!
-    </p>
+    <div class="video-background">
+      <video id="backgroundVideo" autoplay muted loop>
+        <source src="./src/video/99f6e54243.mp4" type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+    <nav class="navbar">
+      <div class="navbar-container">
+          <div class="logo">
+              <img src="./src/img/favicon.svg" alt="Logo">
+              <span>Jeferson Mellado</span>
+          </div>
+          <ul class="nav-links">
+              <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+              <li><a href="#experiencia"><i class="fas fa-briefcase"></i> Experiencia</a></li>
+              <li><a href="#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
+              <li><a href="#sobremi"><i class="fas fa-info-circle"></i> Sobre mí</a></li>
+          </ul>
+      </div>
+  </nav>
   </body>
 </html>
