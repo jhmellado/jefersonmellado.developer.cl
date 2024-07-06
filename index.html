@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="src/css/fonts.css" />
     <link rel="shortcut icon" href="src/img/favicon.svg" type="image/x-icon" />
     <!-- Incluir Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -22,27 +25,82 @@
       <div class="navbar-container">
         <div class="logo">
           <img src="./src/img/favicon.svg" alt="Logo" />
-          <span>Jeferson Mellado</span>
+          <h1>Jeferson Mellado</h1>
         </div>
         <ul class="nav-links">
           <li>
-            <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+            <a class="nav-item" href="#" data-target="inicio"
+              ><i class="fas fa-home"></i> Inicio</a
+            >
           </li>
           <li>
-            <a href="#experiencia"
+            <a class="nav-item" href="#" data-target="experiencia"
               ><i class="fas fa-briefcase"></i> Experiencia</a
             >
           </li>
           <li>
-            <a href="#proyectos"
+            <a class="nav-item" href="#" data-target="proyectos"
               ><i class="fas fa-project-diagram"></i> Proyectos</a
             >
           </li>
           <li>
-            <a href="#sobremi"><i class="fas fa-info-circle"></i> Sobre mí</a>
+            <a class="nav-item" href="#" data-target="sobremi"
+              ><i class="fas fa-info-circle"></i> Sobre mí</a
+            >
           </li>
         </ul>
       </div>
     </nav>
+    <main>
+      <section id="home" class="content-section active">
+        <div class="">
+          <img
+            src="./src/img/favicon.svg"
+            alt="Foto de perfil del desarrollador semi-senior Jeferson Mellado"
+          />
+          <div class="smedia_buttons">
+            <ul class="nav-links">
+              <li>
+                <a class="nav-item" href="#" data-target="inicio"
+                  ><i class="fas fa-home"></i></a
+                >
+              </li>
+              <li>
+                <a class="nav-item" href="#" data-target="experiencia"
+                  ><i class="fas fa-briefcase"></i></a
+                >
+              </li>
+              <li>
+                <a class="nav-item" href="#" data-target="proyectos"
+                  ><i class="fas fa-project-diagram"></i></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="">
+          <h2>Bienvenido</h2>
+          <p>Contenido de la sección de inicio.</p>
+        </div>
+      </section>
+      <section id="about" class="content-section">
+        <h2>Sobre Mí</h2>
+        <p>Contenido de la sección sobre mí.</p>
+      </section>
+      <section id="projects" class="content-section">
+        <h2>Proyectos</h2>
+        <p>Contenido de la sección de proyectos.</p>
+      </section>
+      <section id="contact" class="content-section">
+        <h2>Contacto</h2>
+        <p>Contenido de la sección de contacto.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Mi Portafolio</p>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
   </body>
 </html>

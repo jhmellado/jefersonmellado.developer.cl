@@ -4,8 +4,8 @@ html {
   padding: 0;
   height: 100%;
   overflow: hidden;
-  font-family: 'devjefersonmellado';
-  color: aliceblue;
+  font-family: "devjefersonmellado";
+  color: #ffffff;
 }
 .video-background {
   position: absolute;
@@ -28,44 +28,77 @@ html {
 }
 
 .navbar {
-
   margin: 5vh;
 
   .navbar-container {
-
     display: flex;
     flex-direction: row;
-  
+    justify-content: space-between;
+
     .logo {
-  
       display: flex;
       flex-direction: row;
-  
+
       img {
         height: 10vh;
       }
-  
-      span {
+
+      h1 {
         align-self: center;
-        
-        font-size: 5vh;
+        margin: 0 1vw;
+        font-size: 3.5vw;
       }
     }
 
     .nav-links {
-      
+      margin: 0 auto;
+      padding-left: 0;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
-      list-style: none; 
-      
+      justify-content: space-around;
+      list-style: none;
+
+      .nav-item {
+        margin: 0 1vw;
+        color: #ffffff;
+        padding: 3px 8px;
+        background: #02050c;
+        border: 1px solid #00adef;
+        border-radius: 99999px;
+        text-decoration: none;
+      }
+
+      .nav-item:hover {
+        background: #00adef;
+      }
     }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+
+  .content-section {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 2em;
+    transition: opacity 0.5s ease, max-height 0.5s ease, padding 0.5s ease;
+  }
+
+  .content-section.active {
+    opacity: 1;
+    max-height: 100vh; /* Ajustar según el contenido */
+    padding: 2em;
   }
 }
 
 
 
-
-
-
+.hidden {
+  display: none;
+}
