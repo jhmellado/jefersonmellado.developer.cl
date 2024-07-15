@@ -1,19 +1,22 @@
-const navLinks = document.querySelectorAll(".nav-item");
-const sections = document.querySelectorAll(".content-section");
+const navbar = document.querySelector(".navbar");
+const navItems = navbar.querySelectorAll(".nav-item");
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", function (event) {
-    event.preventDefault();
-    const targetId = this.getAttribute("data-target");
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navItems.forEach((i) => i.classList.remove("active"));
 
-    sections.forEach((section) => {
-      if (section.id === targetId) {
-        section.classList.add("active");
-        section.classList.remove("hidden");
-      } else {
-        section.classList.remove("active");
-        section.classList.add("hidden");
-      }
-    });
+    if (item.dataset.target === "inicio") {
+      navbar.classList.remove("vertical");
+      navbar.classList.add("horizontal");
+    } else {
+      navbar.classList.remove("horizontal");
+      navbar.classList.add("vertical");
+    }
+
+    if(item.dataset.target !== "inicio") {
+      item.classList.add("active");
+    }
+
+    
   });
 });
