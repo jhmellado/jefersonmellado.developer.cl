@@ -5,7 +5,7 @@ const sections = document.querySelectorAll(".content-section");
 
 navItems.forEach((item) => {
   item.addEventListener("click", () => {
-    if (!noApplyActive.find((na_item) => na_item === item.dataset.target)){
+    if (!noApplyActive.find((na_item) => na_item === item.dataset.target)) {
       window.scrollTo({
         top: document.getElementById(item.dataset.target).offsetTop - 100,
         behavior: "smooth",
@@ -13,7 +13,6 @@ navItems.forEach((item) => {
       navItems.forEach((i) => i.classList.remove("active"));
       sections.forEach((s) => s.classList.remove("active"));
     }
-      
 
     if (item.dataset.target === "inicio") {
       navbar.classList.remove("vertical");
@@ -28,9 +27,11 @@ navItems.forEach((item) => {
       item.dataset.target !== "inicio"
     ) {
       item.classList.add("active");
-      
     }
-    document.getElementById(item.dataset.target).classList.add("active");
+    const itemTarget = document.getElementById(item.dataset.target);
+    if (itemTarget) {
+      itemTarget.classList.add("active");
+    }
   });
 });
 
